@@ -14,7 +14,7 @@
         <scala.version>2.11.8</scala.version>
         <hadoop.version>2.7.3</hadoop.version>
         <junit.version>3.8.1</junit.version>
-        <scalatest.version>2.2.0</scalatest.version>
+        <scalatest.version>3.2.0-SNAP7</scalatest.version>
         <spark.version>1.6.3</spark.version>
         <hadoop.version>2.7.1</hadoop.version>
     </properties>
@@ -46,6 +46,13 @@
             <groupId>org.typelevel</groupId>
             <artifactId>cats-core_2.11</artifactId>
             <version>1.0.0-RC1</version>
+        </dependency>
+        <!--start scalatest-->
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.11</artifactId>
+            <version>${scalatest.version}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
