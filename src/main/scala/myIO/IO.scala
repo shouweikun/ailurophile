@@ -1,6 +1,6 @@
 package myIO
 
-import cats.{Functor, Monad}
+import cats.{Alternative, Functor, Monad}
 
 /**
   * Created by john_liu on 2017/12/20.
@@ -40,4 +40,5 @@ object IO extends Monad[IO] {
     }
 
   }
+  override def whileM[G[_], A](p: IO[Boolean])(body: => IO[A])(implicit G: Alternative[G]): IO[G[A]] = super.whileM(p)(body)
 }

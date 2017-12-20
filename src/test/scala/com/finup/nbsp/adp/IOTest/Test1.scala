@@ -2,6 +2,7 @@ package com.finup.nbsp.adp.IOTest
 
 import java.io.File
 
+
 import myIO.IO
 import org.scalatest.{FlatSpec, Matchers}
 
@@ -26,7 +27,7 @@ class Test1 extends FlatSpec with Matchers {
       Source.fromFile(path).getLines()
 
     } else {
-     Iterator("")
+      Iterator("")
     }
   }
 
@@ -48,5 +49,8 @@ class Test1 extends FlatSpec with Matchers {
 
   }
 
-
+  "TestC" should "break loop when condition comes to false" in {
+   val a =  PrintLine("23333")
+    IO.whileM()
+  }
 }
